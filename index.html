@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Калькулятор вартості
+    </title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>
+        Калькулятор вартості
+    </h1>
+
+    <div class="group">
+
+        <label>
+            Тип особи
+        </label>
+
+        <div class="radio-group">
+
+            <label class="radio">
+
+                <input
+                    type="radio"
+                    name="personType"
+                    value="fiz"
+                >
+
+                Фізична особа
+
+            </label>
+
+            <label class="radio">
+
+                <input
+                    type="radio"
+                    name="personType"
+                    value="jur"
+                >
+
+                Юридична особа
+
+            </label>
+
+        </div>
+
+    </div>
+
+    <div class="group">
+
+        <label>
+            Зона реєстрації
+        </label>
+
+        <select id="zone">
+
+            <option value="">
+                Оберіть зону
+            </option>
+
+        </select>
+
+    </div>
+
+    <div class="group">
+
+        <label>
+            Тип транспорту
+        </label>
+
+        <select id="transport">
+
+            <option value="">
+                Оберіть транспорт
+            </option>
+
+        </select>
+
+    </div>
+
+    <div class="result"
+         id="result">
+
+        Заповніть поля
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
